@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="start-and-stop-container">
+            <div class="start-game">
+                <button type="button" class="start-button" id="start-button"> Start Game</button>
+                <button type="button" class="start-button" id="end-button"> End Game</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="timer">
+                <p class="timer"> Time left = <span id="timer"></span></p>
+            </div>
+            <div class="choose-time">
+                <p class="timer"> Choose miutes to play</p>
+                <input type="number" id="timer-number" value="30" class="timer-input">
+            </div>
+        </div>
+        <div class="scoreboard-container">
+            <div class="home-scoreboard-container">
+                <h3>HOME</h3>
+                <div class="home-scoreboard" id="home-scoreboard">
+                    <!-- number of points --> 
+                    <h1>
+                        <span class="score" id="home-score">0</span>
+                    </h1>
+                </div>
+                <button class="button" type="button" id="home-plus-1">+1</button>
+                <button class="button" type="button" id="home-plus-3">+3</button>
+                <button class="button" type="button" id="home-plus-5">+5</button>
+            </div>
+            <div class="guest-scoreboard-container">
+                <h3>GUEST</h3>
+                <div class="guest-scoreboard" id="guest-scoreboard">
+                    <!-- number of points --> 
+                    <h1>
+                        <span class="score" id="guest-score">0</span>
+                    </h1>
+                </div>
+                <button class="button" type="button" id="guest-plus-1">+1</button>
+                <button class="button" type="button" id="guest-plus-3">+3</button>
+                <button class="button" type="button" id="guest-plus-5">+5</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+    
+</body>
+</html>
